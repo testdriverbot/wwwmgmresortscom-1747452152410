@@ -1,0 +1,15 @@
+version: 4.2.29
+session: 6828059e0f03a25544cdc561
+steps:
+  - prompt: Click on "Dining" in the navigation bar.
+    commands:
+      - command: hover-text
+        text: Dining
+        description: dining option in the navigation bar
+        action: click
+  - prompt: Assert that dining options are displayed with descriptions.
+    commands:
+      - command: wait-for-text
+        text: Dining Options
+      - command: assert
+        expect: dining options are displayed with descriptions
