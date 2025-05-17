@@ -1,0 +1,24 @@
+version: 4.2.29
+session: 682805760f03a25544cdc53b
+steps:
+  - prompt: Locate the search icon and click it.
+    commands:
+      - command: hover-image
+        description: magnifying glass icon in the top right corner of the browser
+        action: click
+  - prompt: Enter a search term and submit.
+    commands:
+      - command: hover-text
+        text: Search restaurants, shows, more...
+        description: search bar placeholder text
+        action: click
+      - command: type
+        text: Las Vegas
+      - command: hover-text
+        text: Search
+        description: search button next to the search bar
+        action: click
+  - prompt: Assert that search results are displayed.
+    commands:
+      - command: assert
+        expect: 368 Results for Las Vegas is visible
