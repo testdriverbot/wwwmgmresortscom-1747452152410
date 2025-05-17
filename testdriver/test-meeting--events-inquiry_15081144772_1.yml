@@ -1,0 +1,9 @@
+version: 4.2.29
+session: 682805800f03a25544cdc543
+steps:
+  - prompt: Click on "Meetings & events".
+    commands:
+      - command: hover-text
+        text: Meetings & events
+        description: navigation menu option for meetings and events
+        action: click
