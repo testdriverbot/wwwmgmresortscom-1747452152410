@@ -1,0 +1,31 @@
+version: 4.2.29
+session: 682805900f03a25544cdc54f
+steps:
+  - prompt: Click on the "Click to update/review your Cookies Settings".
+    commands:
+      - command: hover-text
+        text: Click to update/review your Cookies Settings
+        description: button at the bottom of the page
+        action: click
+  - prompt: Modify cookie settings and save.
+    commands:
+      - command: hover-text
+        text: Performance Cookies
+        description: option in the privacy preference center
+        action: click
+      - command: hover-text
+        text: Functional Cookies
+        description: option in the privacy preference center
+        action: click
+      - command: hover-text
+        text: Targeting Cookies
+        description: option in the privacy preference center
+        action: click
+      - command: hover-text
+        text: Confirm My Choices
+        description: button to save cookie settings
+        action: click
+  - prompt: Assert that the settings are updated successfully.
+    commands:
+      - command: assert
+        expect: the settings have been updated successfully
