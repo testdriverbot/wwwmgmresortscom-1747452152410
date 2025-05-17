@@ -1,0 +1,9 @@
+version: 4.2.29
+session: 682805780f03a25544cdc53d
+steps:
+  - prompt: Click on "Entertainment" in the navigation.
+    commands:
+      - command: hover-text
+        text: Entertainment
+        description: entertainment link in the navigation bar
+        action: click
