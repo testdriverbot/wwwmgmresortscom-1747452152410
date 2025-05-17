@@ -1,0 +1,9 @@
+version: 4.2.29
+session: 6828057c0f03a25544cdc53f
+steps:
+  - prompt: Select "Book a room".
+    commands:
+      - command: hover-text
+        text: Book a room
+        description: navigation option in the top menu bar
+        action: click
