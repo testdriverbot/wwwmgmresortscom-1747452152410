@@ -1,0 +1,9 @@
+version: 4.2.29
+session: 6828057f0f03a25544cdc541
+steps:
+  - prompt: Click on "Sign in or join".
+    commands:
+      - command: hover-text
+        text: Sign in or join
+        description: button in the top right corner of the webpage
+        action: click
