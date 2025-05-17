@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 6828058a898e7f966f03bc9e
+steps:
+  - prompt: Click on "Spas & salons" from the navigation.
+    commands:
+      - command: hover-text
+        text: Spas & salons
+        description: navigation menu option for spas and salons
+        action: click
+  - prompt: Assert that available spas and salons are listed with details.
+    commands:
+      - command: assert
+        expect: the page lists spas and salons with details
